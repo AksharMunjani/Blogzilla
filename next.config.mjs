@@ -3,7 +3,14 @@ import { withPayload } from '@payloadcms/next/withPayload'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['payload-cms-project-iota.vercel.app', 'localhost'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'blogzilla-akshar.vercel.app',
+        port: '3000',
+        pathname: '/media/**',
+      },
+    ],
   },
 }
 
