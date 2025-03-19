@@ -6,7 +6,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'blogzilla-akshar.vercel.app',
+        hostname: '**.vercel.app',
+        port: '',
         pathname: '/api/media/**',
       },
       {
@@ -14,7 +15,7 @@ const nextConfig = {
         hostname: 'localhost',
         port: '3000',
         pathname: '/api/media/**',
-      }
+      },
     ],
   },
 }
