@@ -34,6 +34,11 @@ export default buildConfig({
     limits: {
       fileSize: 5000000, // 5MB, adjust as needed
     },
+    useTempFiles: true,
+    defCharset: 'utf8',
+    defParamCharset: 'utf8',
   },
+  cors: ['https://blogzilla-akshar.vercel.app', 'http://localhost:3000'],
+  csrf: ['https://blogzilla-akshar.vercel.app', 'http://localhost:3000'],
   plugins: [payloadCloudPlugin()],
 })
